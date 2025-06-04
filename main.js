@@ -1,5 +1,5 @@
 const dialpadButtons = document.querySelectorAll("input[type='button']");
-const phoneNumberInput = document.querySelector("input[type='number']");
+const phoneNumberInput = document.querySelector("input[type='text']");
 
 dialpadButtons.forEach((button) => {
   button.addEventListener("click", () => {

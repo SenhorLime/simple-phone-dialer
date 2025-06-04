@@ -2,11 +2,12 @@
 
 :root {
   --primary-color: #eff1f5;
-  --secundary-color: #dce0e8;
+  --secondary-color: #dce0e8;
   --tertiary-color: #e6e9ef;
   --primary-green-color: #40a02b;
   --secondary-green-color: #40a02bc8;
-  --red-color: #d20f39;
+  --primary-red-color: #d20f39;
+  --secondary-red-color: #d20f39c8;
   --primary-text-color: #4c4f69;
   --secondary-text-color: #6c6f85;
 }
@@ -23,7 +24,18 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
+}
+
+input[type="text"] {
+  border: none;
+  min-width: 19.5rem;
+  padding: 0.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.75rem;
+  text-align: center;
 }
 
 .dialpad {
@@ -35,14 +47,14 @@ section {
 }
 
 input[type="button"] {
+  width: 6rem;
+  height: 6rem;
   font-family: "IBM Plex Sans", sans-serif;
-  width: 5.5rem;
-  height: 5.5rem;
   font-weight: 500;
-  font-size: 2.75rem;
+  font-size: 3rem;
   border: none;
   border-radius: 50rem;
-  background-color: var(--secundary-color);
+  background-color: var(--secondary-color);
   color: var(--primary-text-color);
 }
 
@@ -51,19 +63,38 @@ input[type="button"]:hover {
   color: var(--secondary-text-color);
 }
 
+.control__buttons {
+  width: 19.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
 button {
-  font-family: "IBM Plex Sans", sans-serif;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 6rem;
+  height: 6rem;
   font-weight: 500;
   font-size: 2.5rem !important;
   border: none;
   border-radius: 50rem;
-  background-color: var(--primary-green-color);
-  color: var(--secundary-color);
 }
 
-button:hover {
+.dial__button {
+  background-color: var(--primary-green-color);
+  color: var(--secondary-color);
+}
+
+.dial__button:hover {
   background-color: var(--secondary-green-color);
-  color: var(--tertiary-color);
+  color: var(--primary-text-color);
+}
+
+.delete__button {
+  background-color: var(--primary-red-color);
+  color: var(--secondary-color);
+}
+
+.delete__button:hover {
+  background-color: var(--secondary-red-color);
+  color: var(--primary-text-color);
 }

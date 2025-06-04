@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_name=call,delete"
     />
+
     <script defer src="main.js"></script>
     <title>Phone Dialer</title>
   </head>
@@ -16,7 +18,13 @@
     <header></header>
     <main>
       <section>
-        <input type="number" name="phone_number" id="phone_number" value="" disabled />
+        <input
+          type="text"
+          name="phone_number"
+          id="phone_number"
+          value="(31) 94002-8922"
+          disabled
+        />
 
         <div class="dialpad">
           <input type="button" value="1" />
@@ -32,8 +40,11 @@
           <input type="button" value="0" />
           <input type="button" value="#" />
         </div>
-        
-        <button class="material-symbols-outlined">call</button>
+
+        <div class="control__buttons">
+          <button class="dial__button material-symbols-outlined">call</button>
+          <button class="delete__button material-symbols-outlined">backspace</button>
+        </div>
       </section>
     </main>
     <footer></footer>
