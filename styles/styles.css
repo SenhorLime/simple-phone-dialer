@@ -47,6 +47,7 @@ input[type="text"] {
 }
 
 input[type="button"] {
+  transition: all 0.25s;
   width: 6rem;
   height: 6rem;
   font-family: "IBM Plex Sans", sans-serif;
@@ -59,6 +60,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
+  transition: all 0.25s;
   background-color: var(--tertiary-color);
   color: var(--secondary-text-color);
 }
@@ -80,21 +82,25 @@ button {
 }
 
 .dial__button {
+  transition: all 0.25s;
   background-color: var(--primary-green-color);
   color: var(--secondary-color);
 }
 
 .dial__button:hover {
+  transition: all 0.25s;
   background-color: var(--secondary-green-color);
   color: var(--primary-text-color);
 }
 
 .delete__button {
+  transition: all 0.25s;
   background-color: var(--primary-red-color);
   color: var(--secondary-color);
 }
 
 .delete__button:hover {
+  transition: all 0.25s;
   background-color: var(--secondary-red-color);
   color: var(--primary-text-color);
 }
