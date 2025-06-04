@@ -1,5 +1,6 @@
 const dialpadButtons = document.querySelectorAll("input[type='button']");
 const phoneNumberInput = document.querySelector("input[type='text']");
+const deleteNumberButton = document.querySelector(".delete__button");
 
 dialpadButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -8,4 +9,10 @@ dialpadButtons.forEach((button) => {
 
     phoneNumberInput.setAttribute("value", oldInputValue + onClickValue);
   });
+});
+
+deleteNumberButton.addEventListener("click", () => {
+  const oldInputValue = phoneNumberInput.getAttribute("value");
+
+  phoneNumberInput.setAttribute("value", oldInputValue.slice(0, -1));
 });
