@@ -11,7 +11,7 @@ Este foi um projeto que desenvolvi nas horas vagas para relembrar conceitos de d
 
 ### Video de demosntração do projeto
 
-[![Video demo](/demos/project-demo.mp4)]
+https://github.com/user-attachments/assets/6b161aa2-042d-43a9-82fb-914d6cc3b13f
 
 ### Licença
 
