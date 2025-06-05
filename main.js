@@ -2,7 +2,7 @@ const dialpadButtons = document.querySelectorAll("input[type='button']");
 const phoneNumberInput = document.querySelector("input[type='text']");
 const deleteNumberButton = document.querySelector(".delete__button");
 
-const dialpadButtonSound = new Audio("/assets/dial-sound.mp3");
+const dialpadButtonSound = new Audio("assets/dial-sound.mp3");
 
 dialpadButtons.forEach((button) => {
   button.addEventListener("click", () => {
